@@ -1,0 +1,33 @@
+---
+title: "getting and cleaning project assinment code book"
+author: "lm"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+This CodeBook relate to project assignment of getting and cleaning data
+#Training data codes
+x_train 
+y_train 
+subject_train 
+#Testing data codes
+x_test 
+y_test 
+subject_test 
+#Feature and activityLabels data code
+features 
+activity_labels 
+#step1-merging
+mtrain: binding train data cbind(x_train,y_train,subject_train)
+mtest: binding test data
+dataset: binding two above mentioned data
+#step2-Extracts only the measurements on the mean and standard deviation for each measurement. 
+x: logical indicator 
+result: dataset provide logical factor
+#step3-Uses descriptive activity names to name the activities in the data set
+dataset_descriptive: data set include description
+#step4-Appropriately labels the data set with descriptive variable names
+#has been done in pervious section
+#step5-From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+tidyDataSet1: shows mean value
+tidyDataSet2: arrange data set based on subjectID and activityID
+tidyDataSet_subset3: select two mentioned columns
